@@ -1,0 +1,15 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="SnippingMultipleScreen.CaptureScreenWindow"
+	x:Name="Window"
+	Title="CaptureScreen"
+	Width="640" Height="480" AllowsTransparency="True" WindowStyle="None" ResizeMode="NoResize" WindowState="Maximized" Cursor="None">
+
+	<Grid>
+
+		<Image x:Name="imgScreenShot" Margin="0" Stretch="None" Cursor="Cross"/>
+
+		<Canvas x:Name="MyCanvas"/>
+	</Grid>
+</Window>

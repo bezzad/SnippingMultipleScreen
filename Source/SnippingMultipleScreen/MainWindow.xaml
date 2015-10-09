@@ -1,0 +1,24 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:SnippingMultipleScreen" x:Name="MainForm" x:Class="SnippingMultipleScreen.MainWindow"
+        Title="Snipping Multiple Screen" Height="600" Width="460" Icon="pack://siteoforigin:,,,/Snipping.ico" MinWidth="460" MinHeight="450" MaxWidth="460">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FFCDB5CD" Offset="0"/>
+            <GradientStop Color="#FFCBD4E4" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+    <Grid>
+        <local:ImageButton x:Name="btnNew" HorizontalAlignment="Left" Height="80" Margin="10,10,0,0" VerticalAlignment="Top" Width="80" ImageSource="Resources/Snipping.png" ImageStretch="Fill" Tickness="0" ToolTip="Create new snipping screen shot" Click="btnNew_Click" Cursor="Hand"/>
+        <GroupBox x:Name="grbScreenShots" Header="Screen Shots" Margin="10,95,10,10" ScrollViewer.CanContentScroll="True" UseLayoutRounding="True">
+            <ListBox x:Name="lstImages" Margin="10,10,9,6" Background="{x:Null}" BorderThickness="0"/>
+        </GroupBox>
+        <local:ImageButton x:Name="btnDelete" HorizontalAlignment="Left" Height="80" Margin="95,10,0,0" VerticalAlignment="Top" Width="80" ImageSource="Resources/Cancel.png" ImageStretch="Fill" Tickness="0" ToolTip="Delete selected snip screen" Click="btnDelete_Click" Cursor="Hand"/>
+        <local:ImageButton x:Name="btnSave" HorizontalAlignment="Left" Height="80" Margin="180,10,0,0" VerticalAlignment="Top" Width="80" ImageSource="Resources/Save.png" ImageStretch="Fill" Tickness="0" ToolTip="Save all snipping screen shots in one Picture" Cursor="Hand" Click="btnSave_Click"/>
+        <local:ImageButton x:Name="btnDeleteAll" HorizontalAlignment="Left" Height="80" Margin="265,10,0,0" VerticalAlignment="Top" Width="80" ImageSource="Resources/Recycle.png" ImageStretch="Fill" Tickness="0" ToolTip="Delete all screen shots" Click="btnDeleteAll_Click" Cursor="Hand"/>
+        <local:ImageButton x:Name="btnAbout" HorizontalAlignment="Left" Height="80" Margin="350,10,0,0" VerticalAlignment="Top" Width="80" ImageSource="Resources/About.png" ImageStretch="Fill" Tickness="0" ToolTip="About Snipping Multiple Screen app's" Cursor="Hand" Click="btnAbout_Click"/>
+
+    </Grid>
+</Window>

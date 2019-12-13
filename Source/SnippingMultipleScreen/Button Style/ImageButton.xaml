@@ -34,10 +34,6 @@
 			<DropShadowEffect/>
 		</Grid.Effect>
 		<Image x:Name="BackgroundImage" Margin="5"/>
-		<Rectangle x:Name="Rect" Stroke="Black" RadiusX="8" RadiusY="8">
-			<Rectangle.Effect>
-				<ee:RippleEffect/>
-			</Rectangle.Effect>
-		</Rectangle>
+		<Rectangle x:Name="Rect" Stroke="Black" RadiusX="8" RadiusY="8" />
 	</Grid>
 </UserControl>
